@@ -1,0 +1,157 @@
+/* TODO: Creating styles for CSS of the project */
+
+
+/* ? MAIN CSS(DONE) */
+body{
+    /* ? Sans is a backup font in case Poppins does not load in browser */
+font-family: 'Poppins', 'sans-serif';
+background-color: #8c53ff;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+
+}
+
+#container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
+  width: 827px;
+  height: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* ? Scroll inside the note container */
+  overflow-y: scroll;
+
+}
+
+#list-header {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+
+.blankDiv{
+background-color: #fff;
+border: none;
+padding: 20px;
+border-radius: 8px;
+height: 200px;
+width: 200px;
+margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+#addNoteDiv{
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+padding: 20px;
+border-radius: 8px;
+height: 200px;
+width: 200px;
+margin: 10px;
+cursor:pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+/* ? Styles for hover animation */
+
+#addNoteDiv:hover{
+ transition: 0.25s;
+ background-color: #f1f1f1;   
+}
+#addNoteDiv i{
+ font-size: 70px;
+ color: gainsboro;
+
+}
+
+
+/* ? LIST CSS(ONGOING) */
+#list-container{
+ display: flex;
+ align-items: left;
+ justify-content: left;
+
+
+}
+/* ?The notes should wrap when there are multiple notes. */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* ? The actual note and how it looks */
+li {
+  background-color: #fff385;
+  margin: 5px 0;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 9px 9px 18px #b3b3b3,
+              -9px -9px 18px #ffffff; 
+}
+
+li span {
+ font-size: 12px;
+ flex-grow: 1;
+ word-wrap: break-word;
+ overflow-y: scroll;
+}
+
+#editBtn,
+#deleteBtn {
+    background-color: #c6aaff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px; /* Adjusted margin for spacing */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 60px;
+}
+
+#editBtn {
+    background-color: gainsboro;
+}
+
+#deleteBtn:hover {
+    background-color: #8c53ff;
+}
+
+#editBtn:hover {
+    background-color: gray;
+}
+
+
+
+/* ? CREATE Note pop-up CSS */
+
+
+/* ?EDITING note pop-up CSS */
