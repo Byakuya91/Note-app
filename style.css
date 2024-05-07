@@ -1,6 +1,4 @@
 /* TODO: Creating styles for CSS of the project */
-
-
 /* ? MAIN CSS(DONE) */
 body{
     /* ? Sans is a backup font in case Poppins does not load in browser */
@@ -81,7 +79,7 @@ align-items: center;
 }
 
 
-/* ? LIST CSS(ONGOING) */
+/* ? LIST CSS(DONE) */
 #list-container{
  display: flex;
  align-items: left;
@@ -151,7 +149,92 @@ li span {
 
 
 
-/* ? CREATE Note pop-up CSS */
+/* ? CREATE Note pop-up CSS(DONE) */
+#popupContainer{
+/* ? This should ensure the popContainer is in the CENTER of the screen */
+ position: absolute;
+ top: 50%;
+ bottom: 50%;
+ transform: translate(-50%, -50%);
+ /* ? width and height is the SIZE of the popup */
+ width: 400px;
+ height: 300px;
+ background-color: white;
+ border: 1px solid #ccc;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ border-radius: 8px;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #8c53ff;
+}
+
+#btn-container {
+    display: flex;
+}
+
+#submitBtn, #closeBtn {
+    width: 100px;
+    background-color: #8c53ff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#closeBtn {
+    background-color: gainsboro;
+}
 
 
-/* ?EDITING note pop-up CSS */
+
+/* ?EDITING note pop-up CSS(DONE) */
+#editing-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#submitBtn, #closeBtn {
+    width: 100px;
+    background-color: #8c53ff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#closeBtn {
+    background-color: gainsboro;
+}
