@@ -13,7 +13,7 @@ min-height: 100vh;
 }
 
 #container {
-  background-color: #fff;
+   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.3);
   overflow: hidden;
@@ -98,7 +98,8 @@ ul {
 }
 
 /* ? The actual note and how it looks */
-li {
+/* ! CURRENT styles does NOT work for Chrome with Scroll bar. */
+/* li {
   background-color: #fff385;
   margin: 5px 0;
   padding: 20px;
@@ -120,7 +121,44 @@ li span {
  flex-grow: 1;
  word-wrap: break-word;
  overflow-y: scroll;
+ word-wrap: break-word; 
+} */
+
+/* ! TEST STYLES  */
+/* For Chrome */
+li::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
 }
+
+/* For Firefox and other browsers */
+li {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+}
+
+/* Remaining styles */
+li {
+    background-color: #fff385;
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 200px; /* Set a maximum height */
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 9px 9px 18px #b3b3b3, -9px -9px 18px #ffffff;
+    overflow-y: auto; /* Adjust overflow property */
+}
+
+li span {
+    font-size: 12px;
+    flex-grow: 1;
+    word-wrap: break-word;
+}
+
 
 #editBtn,
 #deleteBtn {
